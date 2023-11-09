@@ -1,0 +1,183 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInUp 1s ease;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('img3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background 0.3s ease; /* Add transition */
+}
+
+.hero:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #fff;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease 0.5s;
+}
+
+/* Content section styles */
+.content {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeInUp 1s ease;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Rest of the CSS code remains the same */

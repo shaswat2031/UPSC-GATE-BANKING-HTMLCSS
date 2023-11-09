@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Subscription Plans</title>
+    <style>
+        /* Reset some default styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply styles to the entire body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Create a container to center the pricing table */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Create three columns with equal width */
+        .columns {
+            flex: 1;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Style the list */
+        .price {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pricing header */
+        .price .header {
+            background-color: #111;
+            color: white;
+            font-size: 25px;
+            padding: 10px 0;
+        }
+
+        /* List items */
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+        }
+
+        /* Grey list item */
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
+        }
+
+        /* The "Sign Up" button */
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* On hover, scale the columns and change button color */
+        .columns:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            background-color: #008049;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive design for small screens */
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .columns {
+                margin: 10px 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <ul class="price">
+                <li class="header">UPSC Basic</li>
+                <li class="grey">₹30 / 30 Days</li>
+                <li>Access to Basic PDFs</li>
+                <li>Support Forum Access</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">UPSC Standard</li>
+                <li class="grey">₹50 / 30 Days</li>
+                <li>Access to Premium PDFs</li>
+                <li>Priority Support Forum Access</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="columns">
+            <ul class="price">
+                <li class="header">UPSC Premium</li>
+                <li class="grey">₹80 / 30 Days</li>
+                <li>Access to Exam-Related PDFs</li>
+                <li>Access to Mock Tests</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

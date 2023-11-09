@@ -1,0 +1,131 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, table, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Notification Section */
+.notification h2 {
+    color: #007BFF;
+}
+
+.notification p {
+    font-size: 18px;
+}
+
+/* Syllabus Section */
+.syllabus h2 {
+    color: #007BFF;
+}
+
+.syllabus p {
+    font-size: 18px;
+}
+
+/* Eligibility Criteria Section */
+.eligibility-criteria h2 {
+    color: #007BFF;
+}
+
+.eligibility-criteria h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Books Section */
+.books h2 {
+    color: #007BFF;
+}
+
+.book-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.book {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.book p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add more styles as needed */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .book {
+        width: calc(50% - 20px);
+    }
+}

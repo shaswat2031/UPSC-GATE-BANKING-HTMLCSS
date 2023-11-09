@@ -1,0 +1,338 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, h4, p, ul, ol, li, table {
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-weight: 900 ;
+    color: crimson;
+}
+
+/* Apply a background image and styles to the entire page */
+body {
+    background-color: #f0f0f0; /* Background color */
+    font-family: 'Roboto', sans-serif; /* Change to your preferred font family */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+}
+
+/* Style the header with a background gradient */
+header {
+    background: linear-gradient(to right, #4a90e2, #8e44ad); /* Gradient background (changed colors) */
+    color: #fff; /* Font color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: headerBackgroundChange 6s infinite alternate;
+}
+
+
+/* Add animation to the header text */
+header h1 {
+    animation: colorChange 8s infinite alternate;
+    animation: forwards;
+}
+
+/* Main navigation menu styles */
+nav ul {
+    background-color: #270745; /* Background color */
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display:inline-flex;
+    margin-right: 20px;
+    transition: transform 1s;
+    transition: ease-in 5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Font color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #be4ae2; /* Hover font color (changed color) */
+    transform: scale(1.1);
+}
+
+/* Container for sections with a background and box shadow */
+.container {
+    max-width: 1200px;
+    margin: 2px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Background color with transparency */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style headings with a border bottom */
+h1, h2, h3, h4 {
+    color: #a40b0b; /* Default text color */
+    margin-bottom: 10px;
+    text-align: center;
+    opacity: 0.9; /* Increased text opacity */
+    font-weight:800;
+}
+
+h2 {
+    border-bottom: 2px solid #4a90e2; /* Border color (changed color) */
+    padding-bottom: 10px;
+    margin-top: 20px;
+    animation: borderBottomFade 3s infinite alternate;
+}
+
+/* Style links with animation */
+a {
+    color: #4a90e2; /* Link color (changed color) */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8e44ad; /* Hover link color (changed color) */
+}
+
+/* Style lists */
+ul, ol {
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 20px;
+    animation: listItemFade 3s infinite alternate;
+    animation: both 10s;
+     /* Increased text opacity */
+}
+
+/* Style tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #010000;
+    text-align: left;
+}
+
+/* Apply styles to specific sections */
+#overview, #examination, #syllabus, #eligibility, #resources, #prelims, #mains, #interview {
+    margin-bottom: 40px;
+}
+
+/* Style subsections */
+h4, h5 {
+    margin-top: 20px;
+    color: #4a90e2; /* Subsection text color (changed color) */
+    opacity: 0.9; /* Increased text opacity */
+}
+
+/* Animation for header background change */
+@keyframes headerBackgroundChange {
+    0% {
+        background: linear-gradient(to right, #4a90e2, #8e44ad);
+    }
+    100% {
+        background: linear-gradient(to right, #8e44ad, #4a90e2);
+    }
+}
+
+/* Animation for header text color change */
+@keyframes colorChange {
+    0% {
+        color: #4a90e2; /* Initial font color */
+    }
+    100% {
+        color: #8e44ad; /* Alternate font color (changed color) */
+    }
+}
+
+/* Animation for border bottom fade */
+@keyframes borderBottomFade {
+    0% {
+        border-color: #4a90e2; /* Initial border color (changed color) */
+    }
+    100% {
+        border-color: #8e44ad; /* Alternate border color (changed color) */
+    }
+}
+
+/* Animation for list item fade */
+@keyframes listItemFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+/* Additional Styles */
+
+/* Style buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a90e2; /* Button background color (changed color) */
+    color: #fff; /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #8e44ad; /* Button hover background color (changed color) */
+    color: #333; /* Button hover text color */
+}
+
+/* Style blockquotes */
+blockquote {
+    background-color: #f9f9f9; /* Blockquote background color */
+    border-left: 4px solid #4a90e2; /* Border color (changed color) */
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #333; /* Text color */
+}
+
+/* Style code blocks */
+code {
+    background-color: #f0f0f0; /* Code block background color */
+    padding: 2px 4px;
+    font-family: 'Courier New', monospace; /* Code font family */
+}
+
+/* Style form elements */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px;
+}
+
+/* Style form submit button */
+input[type="submit"] {
+    background-color: #4a90e2; /* Button background color (changed color) */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #8e44ad; /* Button hover background color (changed color) */
+    color: #333; /* Button hover text color */
+}
+
+/* Style alerts or messages */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Style a call-to-action section */
+.cta {
+    background-color: #4a90e2; /* CTA background color (changed color) */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style social media icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333; /* Icon color */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4a90e2; /* Hover icon color (changed color) */
+}
+
+/* Style a simple footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color */
+}
+
+/* Style a horizontal rule */
+hr {
+    border: 1px solid #ccc; /* Border color */
+    margin: 20px 0;
+}
+
+/* Animation for other elements */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes blockquoteAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes codeAnimation {
+    0% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #f9f9f9;
+    }
+}
+
+@keyframes inputAnimation {
+    0% {
+        border-color: #ccc;
+    }
+    100% {
+        border-color: #4a90e2; /* Changed border color */
+    }
+}
+
+@keyframes alertAnimation {
+    0% {
+        background-color: #f9f9f9;
+    }
+    100% {
+        background-color: #333; /* Change background color for alerts */
+        color: #fff; /* Change text color for alerts */
+    }
+}

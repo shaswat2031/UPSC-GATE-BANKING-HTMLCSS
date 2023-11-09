@@ -1,0 +1,274 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+::selection {
+    color: #000;
+    background: #fff;
+}
+
+/* Style the header */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 23px;
+}
+
+/* Style the exam list */
+.exam-list {
+    margin: 23px;
+    padding: 23px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(233, 7, 7, 0.2);
+    border-radius: 5px;
+}
+
+.exam-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.exam-list ul {
+    list-style: circle;
+}
+
+.exam-list ul li {
+    margin-bottom: 10px;
+}
+
+.exam-list ul li a,
+.exam-list ul li button {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exam-list ul li a:hover,
+.exam-list ul li button:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the bank exam resources section */
+.bank-exam-resources {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.bank-exam-resources h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.bank-exam-resources ul {
+    list-style: none;
+}
+
+.bank-exam-resources ul li {
+    margin-bottom: 10px;
+}
+
+.bank-exam-resources ul li a,
+.bank-exam-resources ul li button {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    transition: color 0.5s ease;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bank-exam-resources ul li a:hover,
+.bank-exam-resources ul li button:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the footer with social media links */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-media-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media-links a {
+    text-decoration: dotted;
+}
+
+/* Additional CSS Styles */
+
+/* 1. Style the header links */
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ff9900; /* Orange on hover */
+}
+
+/* 2. Style the exam list items with icons */
+.exam-list ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* 3. Style the bank exam resources section with a background image */
+.bank-exam-resources {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+/* 4. Style the exam list with borders */
+.exam-list ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 5. Style the footer links with a border bottom */
+footer a {
+    border-bottom: 1px dashed #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+}
+
+footer a:hover {
+    border-color: #ff9900; /* Orange border on hover */
+}
+
+/* 6. Style the exam list items with background color on hover */
+.exam-list ul li:hover {
+    background-color: #f2f2f2; /* Light gray on hover */
+}
+
+/* 7. Style the bank exam resources links with icons */
+.bank-exam-resources ul li::before {
+    content: "\f02d"; /* FontAwesome icon */
+    font-family: FontAwesome;
+    margin-right: 10px;
+    color: #ff9900; /* Orange icon color */
+}
+
+/* 8. Style the header background with gradient */
+header {
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
+}
+
+/* 9. Style the exam list items with a shadow */
+.exam-list ul li {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 10. Style the footer background with a pattern */
+footer {
+    background: url('pattern.png');
+    background-repeat: repeat;
+}
+
+/* 11. Style the header with padding */
+header {
+    padding: 20px 0;
+}
+
+/* 12. Style the exam list items with a hover scale effect */
+.exam-list ul li:hover {
+    transform: scale(1.05); /* Slightly scale on hover */
+}
+
+/* 13. Style the footer with a box shadow */
+footer {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 14. Style the social media links with a hover effect */
+.social-media-links a:hover {
+    transform: scale(1.7); /* Slightly scale on hover */
+}
+
+/* 15. Style the header with a border bottom */
+header {
+    border-bottom: 1px solid #ccc;
+}
+
+.social-media-links img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-media-links img:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Additional Section and Animation */
+
+/* 16. Style a new section with a background color */
+.new-section {
+    background-color: #ff9900; /* Orange background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 17. Add a fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
